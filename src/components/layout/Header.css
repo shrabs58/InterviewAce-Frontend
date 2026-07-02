@@ -1,0 +1,24 @@
+.app-header {
+    height: 70px;
+
+    background-color: var(--primary-color);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    box-shadow: var(--shadow-light);
+}
+
+.app-header-title {
+
+    color: white;
+
+    font-size: var(--font-title);
+
+    font-family: var(--font-family);
+
+    font-weight: bold;
+}
