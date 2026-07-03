@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProtectedRoute from "./ProtectedRoute";
 
 // Authentication Pages
 import Login from "../pages/auth/Login";
@@ -25,32 +26,41 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-
         {/* Authentication Routes */}
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
         {/* Student Routes */}
-        <Route path="/student" element={<StudentLayout />}>
+        <Route
+          path="/student"
+          element={
+            <ProtectedRoute allowedRole="STUDENT">
+              <StudentLayout />
+            </ProtectedRoute>
+          }
+        >
           <Route path="dashboard" element={<StudentDashboard />} />
           <Route path="profile" element={<StudentProfile />} />
           <Route path="resume" element={<StudentResume />} />
-          <Route
-            path="interview-practice"
-            element={<InterviewPractice />}
-          />
+          <Route path="interview-practice" element={<InterviewPractice />} />
           <Route path="progress" element={<Progress />} />
         </Route>
 
         {/* Admin Routes */}
-        <Route path="/admin" element={<AdminLayout />}>
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute allowedRole="ADMIN">
+              <AdminLayout />
+            </ProtectedRoute>
+          }
+        >
           <Route path="dashboard" element={<AdminDashboard />} />
           <Route path="users" element={<Users />} />
           <Route path="categories" element={<Categories />} />
           <Route path="questions" element={<Questions />} />
         </Route>
-
       </Routes>
     </BrowserRouter>
   );

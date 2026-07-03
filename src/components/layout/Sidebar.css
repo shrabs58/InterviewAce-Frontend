@@ -1,52 +1,59 @@
 .app-sidebar {
+  width: 250px;
 
-    width: 250px;
+  height: calc(100vh - 70px);
 
-    height: calc(100vh - 70px);
+  background-color: var(--sidebar-color);
 
-    background-color: var(--sidebar-color);
+  color: white;
 
-    color: white;
-
-    padding: var(--spacing-md);
+  padding: var(--spacing-md);
 }
 
 .sidebar-menu {
-
-    list-style: none;
+  list-style: none;
 }
 
 .sidebar-menu li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .sidebar-link {
+  display: flex;
 
-    display: flex;
+  align-items: center;
 
-    align-items: center;
+  gap: 10px;
 
-    gap: 10px;
+  text-decoration: none;
 
-    text-decoration: none;
+  color: white;
 
-    color: white;
+  padding: 15px;
 
-    padding: 15px;
+  border-radius: var(--radius-medium);
 
-    border-radius: var(--radius-medium);
-
-    transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .sidebar-link:hover {
-
-    background-color: rgba(255,255,255,0.15);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .active-link {
+  background-color: rgba(255, 255, 255, 0.25);
 
-    background-color: rgba(255,255,255,0.25);
+  font-weight: bold;
+}
 
-    font-weight: bold;
+.logout-button {
+  width: 100%;
+
+  background: none;
+
+  border: none;
+
+  font: inherit;
+
+  text-align: left;
 }
