@@ -25,12 +25,6 @@ export const studentMenu = [
   },
   {
     id: 5,
-    label: "Progress Dashboard",
-    icon: "📊",
-    path: "/student/progress",
-  },
-  {
-    id: 6,
     label: "Logout",
     icon: "🚪",
     path: "/login",

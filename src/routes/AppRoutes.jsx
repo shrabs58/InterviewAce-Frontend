@@ -10,7 +10,6 @@ import StudentDashboard from "../pages/student/Dashboard";
 import StudentProfile from "../pages/student/Profile";
 import StudentResume from "../pages/student/Resume";
 import InterviewPractice from "../pages/student/InterviewPractice";
-import Progress from "../pages/student/Progress";
 
 // Admin Pages
 import AdminDashboard from "../pages/admin/Dashboard";
@@ -44,7 +43,6 @@ function AppRoutes() {
           <Route path="profile" element={<StudentProfile />} />
           <Route path="resume" element={<StudentResume />} />
           <Route path="interview-practice" element={<InterviewPractice />} />
-          <Route path="progress" element={<Progress />} />
         </Route>
 
         {/* Admin Routes */}
