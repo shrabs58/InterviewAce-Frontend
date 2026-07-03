@@ -1,10 +1,12 @@
 .users-page {
-  padding: 30px;
+  padding: 35px;
 }
 
 .users-page h2 {
-  margin-bottom: 25px;
   color: var(--primary-color);
+  font-size: var(--font-title);
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .users-table {
@@ -16,36 +18,49 @@
   box-shadow: var(--shadow-light);
 }
 
-.users-table th {
-  font-size: 15px;
-}
+.users-table th,
 .users-table td {
-  font-size: 14px;
-  padding: 15px;
+  padding: 16px 18px;
   text-align: left;
   border-bottom: 1px solid var(--border-color);
 }
 
 .users-table th {
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   color: white;
+  font-size: 15px;
   font-weight: 600;
 }
 
-.users-table tr:hover {
-  background-color: #f8f9fa;
+.users-table td {
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.users-table tbody tr {
+  transition: var(--transition);
+}
+
+.users-table tbody tr:nth-child(even) {
+  background: #fafbfc;
+}
+
+.users-table tbody tr:hover {
+  background: #eef4ff;
 }
 
 .delete-btn {
-  background-color: #dc3545;
+  background: var(--danger-color);
   color: white;
   border: none;
-  padding: 8px 16px;
-  border-radius: var(--radius-small);
+  padding: 9px 16px;
+  border-radius: var(--radius-medium);
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
-  transition: opacity 0.3s ease;
+  transition: var(--transition);
 }
 
 .delete-btn:hover {
-  opacity: 0.9;
+  background: #dc2626;
 }

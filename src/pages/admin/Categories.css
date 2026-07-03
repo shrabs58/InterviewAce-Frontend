@@ -1,10 +1,12 @@
 .categories-page {
-  padding: 30px;
+  padding: 35px;
 }
 
 .categories-page h2 {
-  margin-bottom: 25px;
   color: var(--primary-color);
+  font-size: var(--font-title);
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .category-form {
@@ -15,31 +17,33 @@
 
 .category-form input {
   flex: 1;
-  padding: 12px;
+  padding: 12px 16px;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-medium);
-  font-size: var(--font-medium);
-  outline: none;
-  transition: border-color 0.3s ease;
+  font-size: 15px;
+  transition: var(--transition);
 }
 
 .category-form input:focus {
   border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+  outline: none;
 }
 
 .category-form button {
-  padding: 12px 20px;
-  background-color: var(--primary-color);
+  padding: 12px 22px;
+  background: var(--primary-color);
   color: white;
   border: none;
   border-radius: var(--radius-medium);
+  font-size: 15px;
+  font-weight: 500;
   cursor: pointer;
-  font-size: var(--font-medium);
-  transition: opacity 0.3s ease;
+  transition: var(--transition);
 }
 
 .category-form button:hover {
-  opacity: 0.9;
+  background: var(--primary-hover);
 }
 
 .categories-table {
@@ -51,50 +55,66 @@
   box-shadow: var(--shadow-light);
 }
 
-.categories-table th {
-  font-size: 15px;
-}
+.categories-table th,
 .categories-table td {
-  font-size: 14px;
-  padding: 15px;
+  padding: 16px 18px;
   text-align: left;
   border-bottom: 1px solid var(--border-color);
 }
 
 .categories-table th {
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   color: white;
+  font-size: 15px;
   font-weight: 600;
 }
 
-.categories-table tr:hover {
-  background-color: #f8f9fa;
+.categories-table td {
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.categories-table tbody tr {
+  transition: var(--transition);
+}
+
+.categories-table tbody tr:nth-child(even) {
+  background: #fafbfc;
+}
+
+.categories-table tbody tr:hover {
+  background: #eef4ff;
 }
 
 .edit-btn {
-  background-color: #ffc107;
+  background: var(--warning-color);
   color: #212529;
   border: none;
-  padding: 8px 16px;
-  border-radius: var(--radius-small);
+  padding: 9px 16px;
+  border-radius: var(--radius-medium);
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
-  transition: opacity 0.3s ease;
+  transition: var(--transition);
 }
 
 .edit-btn:hover {
-  opacity: 0.9;
+  background: #d97706;
+  color: white;
 }
 
 .delete-btn {
-  background-color: #dc3545;
+  background: var(--danger-color);
   color: white;
   border: none;
-  padding: 8px 16px;
-  border-radius: var(--radius-small);
+  padding: 9px 16px;
+  border-radius: var(--radius-medium);
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
-  transition: opacity 0.3s ease;
+  transition: var(--transition);
 }
 
 .delete-btn:hover {
-  opacity: 0.9;
+  background: #dc2626;
 }
