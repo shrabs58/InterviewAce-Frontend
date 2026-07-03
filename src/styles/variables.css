@@ -1,61 +1,54 @@
 :root {
+  /* ================= Colors ================= */
 
-    /* ==========================
-       Colors
-    ========================== */
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
 
-    --primary-color: #2563EB;
-    --sidebar-color: #1E3A8A;
+  --sidebar-color: #1e3a8a;
+  --sidebar-hover: #3152b6;
 
-    --background-color: #F8FAFC;
+  --background-color: #f4f7fc;
+  --card-color: #ffffff;
 
-    --card-color: #FFFFFF;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
 
-    --text-primary: #1F2937;
-    --text-secondary: #6B7280;
+  --border-color: #e5e7eb;
 
-    --border-color: #E5E7EB;
+  --success-color: #22c55e;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
 
-    --success-color: #22C55E;
-    --warning-color: #F59E0B;
-    --danger-color: #EF4444;
+  /* ================= Fonts ================= */
 
-    /* ==========================
-       Fonts
-    ========================== */
+  --font-family: "Poppins", sans-serif;
 
-    --font-family: Arial, Helvetica, sans-serif;
+  /* ================= Font Sizes ================= */
 
-    /* ==========================
-       Font Sizes
-    ========================== */
+  --font-small: 13px;
+  --font-medium: 15px;
+  --font-large: 18px;
+  --font-title: 30px;
 
-    --font-small: 14px;
-    --font-medium: 16px;
-    --font-large: 22px;
-    --font-title: 28px;
+  /* ================= Spacing ================= */
 
-    /* ==========================
-       Spacing
-    ========================== */
+  --spacing-xs: 6px;
+  --spacing-sm: 12px;
+  --spacing-md: 20px;
+  --spacing-lg: 32px;
 
-    --spacing-xs: 5px;
-    --spacing-sm: 10px;
-    --spacing-md: 20px;
-    --spacing-lg: 30px;
+  /* ================= Border Radius ================= */
 
-    /* ==========================
-       Border Radius
-    ========================== */
+  --radius-small: 6px;
+  --radius-medium: 10px;
+  --radius-large: 16px;
 
-    --radius-small: 5px;
-    --radius-medium: 8px;
-    --radius-large: 12px;
+  /* ================= Shadows ================= */
 
-    /* ==========================
-       Shadows
-    ========================== */
+  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.12);
 
-    --shadow-light: 0 2px 6px rgba(0,0,0,0.1);
+  /* ================= Animation ================= */
 
+  --transition: all 0.25s ease;
 }

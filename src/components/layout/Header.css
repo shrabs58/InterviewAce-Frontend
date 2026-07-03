@@ -1,24 +1,32 @@
 .app-header {
-    height: 70px;
+  height: 70px;
+  background: var(--primary-color);
 
-    background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    display: flex;
+  padding: 0 30px;
 
-    justify-content: center;
-
-    align-items: center;
-
-    box-shadow: var(--shadow-light);
+  box-shadow: var(--shadow-medium);
 }
 
-.app-header-title {
+.header-logo {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
 
-    color: white;
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 
-    font-size: var(--font-title);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
 
-    font-family: var(--font-family);
-
-    font-weight: bold;
+.user-icon {
+  font-size: 28px;
 }

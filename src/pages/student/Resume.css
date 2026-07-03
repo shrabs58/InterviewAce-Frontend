@@ -1,42 +1,71 @@
 .resume-page {
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding: 35px;
 }
 
 .resume-card {
   width: 700px;
   background: var(--card-color);
-  padding: 30px;
+  padding: 35px;
   border-radius: var(--radius-large);
   box-shadow: var(--shadow-light);
+  transition: var(--transition);
+}
+
+.resume-card:hover {
+  box-shadow: var(--shadow-medium);
 }
 
 .resume-card h2 {
-  margin-bottom: 25px;
   color: var(--primary-color);
+  font-size: var(--font-title);
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .resume-details {
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-medium);
+  padding: 18px;
   margin-bottom: 25px;
 }
 
 .resume-details p {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.resume-details p:last-child {
+  margin-bottom: 0;
 }
 
 .resume-card input[type="file"] {
+  width: 100%;
+  padding: 12px;
   margin: 20px 0;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-medium);
+  background: white;
+  font-size: 15px;
 }
 
 .resume-button,
 .delete-button {
   width: 100%;
-  padding: 12px;
+  padding: 13px;
+
   border: none;
   border-radius: var(--radius-medium);
+
+  font-size: 15px;
+  font-weight: 600;
+
   cursor: pointer;
-  font-size: var(--font-medium);
+
+  transition: var(--transition);
 }
 
 .resume-button {
@@ -44,8 +73,16 @@
   color: white;
 }
 
+.resume-button:hover {
+  background: var(--primary-hover);
+}
+
 .delete-button {
   margin-top: 15px;
-  background: #dc3545;
+  background: var(--danger-color);
   color: white;
+}
+
+.delete-button:hover {
+  opacity: 0.9;
 }
