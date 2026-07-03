@@ -6,10 +6,6 @@ export const getAllCategories = () => {
   return axios.get(API_BASE_URL);
 };
 
-export const getCategoryById = (id) => {
-  return axios.get(`${API_BASE_URL}/${id}`);
-};
-
 export const createCategory = (category) => {
   return axios.post(API_BASE_URL, category);
 };
