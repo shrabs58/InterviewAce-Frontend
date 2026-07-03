@@ -9,3 +9,11 @@ export const getUserById = (id) => {
 export const updateProfile = (id, profileRequest) => {
   return axios.put(`${API_BASE_URL}/${id}`, profileRequest);
 };
+
+export const getAllUsers = () => {
+  return axios.get(API_BASE_URL);
+};
+
+export const deleteUser = (id) => {
+  return axios.delete(`${API_BASE_URL}/${id}`);
+};
