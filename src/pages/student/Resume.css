@@ -1,0 +1,51 @@
+.resume-page {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.resume-card {
+  width: 700px;
+  background: var(--card-color);
+  padding: 30px;
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow-light);
+}
+
+.resume-card h2 {
+  margin-bottom: 25px;
+  color: var(--primary-color);
+}
+
+.resume-details {
+  margin-bottom: 25px;
+}
+
+.resume-details p {
+  margin-bottom: 10px;
+}
+
+.resume-card input[type="file"] {
+  margin: 20px 0;
+}
+
+.resume-button,
+.delete-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: var(--radius-medium);
+  cursor: pointer;
+  font-size: var(--font-medium);
+}
+
+.resume-button {
+  background: var(--primary-color);
+  color: white;
+}
+
+.delete-button {
+  margin-top: 15px;
+  background: #dc3545;
+  color: white;
+}
